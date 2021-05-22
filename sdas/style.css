@@ -2,21 +2,11 @@
     margin:0;
     padding:0;
 }
-
-html, body {
-    width:100%;
-    height:100%;
-    
+html,body{
+    height: 100%;
+    width: 100%;
 }
 
-.content {
-    background-color:rgba(231, 151, 76, 0.589);
-    width:20vmax;
-    margin:1vmax;
-    padding:10px;
-    border:2.5px solid rgb(226, 130, 12) ;
-    box-sizing: content-box;
-}
 
 .img {
     height:300px;
@@ -25,95 +15,157 @@ html, body {
     background-image: url("women.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 2px 2px darkgoldenrod ;
-    
-    
+    box-shadow: 2px 2px darkgoldenrod ;   
 }
 
-div.cont, div.prop,nav,div.desc{
+div.cont,div.desc{
+    width:100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+header{
     width: 100%;
+    padding:20px;
+    height: max-content;
+    display: flex;
+    margin-bottom: 10px;
+    position:sticky; 
+    box-sizing: border-box;
+    justify-content: flex-end;
+    height:max-content;
+    top:0;
+    background-color: rgba(24, 17, 8, 0.753);
+    color:rgb(253, 245, 238)
+}
+nav {
+    width: 50%;
+}
+ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin:0px;
-    
+    justify-content: space-evenly;
+    width: 100%;
 }
-nav {
-   height:70px;
-    margin-bottom: 10px;
-    position:sticky; 
-    top:0;
-}
-ul {
-    position: absolute;
-    flex-direction:row;
-    right: 120px;
-}
-li {
-    /* display:inline; */
-    float: left;
+
+nav li {
     list-style: none;
-    margin-right: 35px;;
-    font-size: 120%;
+    font-size: 1.2rem;
+    margin:10px 10px;
 }
 div.cont {
+    width:100%;
+    padding:0;
+    box-sizing: border-box;
     flex-direction: column; 
     background-color:rgba(243, 205, 170, 0.808);
     
 }
 
-div.prop,nav{
-    justify-content: center;
+div.prop{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: rgba(24, 17, 8, 0.753);
-    color:rgb(253, 245, 238)
+    color:rgb(253, 245, 238);
+}
+div.content {
+    width:400px;
+    height: max-content;
+    flex-wrap: wrap;
+    background-color:rgba(231, 151, 76, 0.589);
+    margin:1vmax 0;
+    padding:10px;
+    border:2.5px solid rgb(226, 130, 12) ;
+    box-sizing: border-box;
+
 }
 
 .img2 {
     height:180px;
-    width:50%;
+    width:620px;
     background-image: url("women2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .img3{
     height:180px;
-    width:50%;
+    width:620px;
+    
     background-image: url("women3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .img4 {
     height:180px;
-    width:50%;
+    width:620px;
     background-image: url("women4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 div.desc {
     padding:10px;
+    box-sizing: border-box;
     flex-direction: column;
+}
+hr {
+    width: 90%;
 }
 .det {
     display:flex;
     margin:30px 10px;
    align-items: center;
-   width:1000px;
+   justify-content: center;
+   width:70vw;
    background-color: rgba(248, 248, 255, 0.603);
 }
 .dum{
     margin: 20px;
-    width:1000px;
+    width:140vw;
 }
-footer {
-    height:150px;
-    width:100%;
-    /* text-align: center; */
-    padding:15px;
+div#list2{
     display: flex;
+    flex-direction: column;
+}
+div#list2 div{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    height: 30px;
+    margin: 5px;
+}
+div#list2>div>img {
+    margin:0px 5px;
+}
+footer {
+    height:max-content;
+    width:100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color:  rgba(24, 17, 8, 0.753);
     color: honeydew;
+}
+footer>div:nth-of-type(2){
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    left:20px;
 }
 
 img{
@@ -121,8 +173,6 @@ img{
     width:25px;
     margin:20px 5px 5px 5px;
 }
-
-
 
 input {
     border-radius: 3px;
@@ -133,55 +183,97 @@ input {
 footer ul {
     all:unset;
     display:flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    font-size: 80%;
+
 }
 
 footer ul li {
-    margin:5px;
-}
-footer div.foot {
-    width:300px;
-    height:100px;
-    position:absolute;
-    right:120px;
-}
-div#list1 {
-    position:absolute;
-    left:370px;
-    font-size: 110%;
-}
-div#list2 {
-    position:absolute;
-    left:120px;
+    margin:5px 0;
+    list-style: none;
 }
 
 .icon div{
     all: unset;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .icon {
     display:flex;
-    flex-direction: column;
-    position: absolute;
-    left:640px;
-    
 }
-.tel {
+.tel,#oo {
     display: inline;
     color:honeydew;
-    position: absolute;
-    left:40px;
-    top:20px;
+    
 }
 div.soan {
     all:unset;
-    position: absolute;
-    left:40px;
-    top:75px;
-    width:127px; 
     display: inline;
+}
+
+
+/* 77777777777777777777777777777777777777777777777777777777777777777777777777777777777777 */
+
+
+@media screen and (max-width:500px){
+    footer>div:nth-of-type(2){
+        position: initial;
+    }
+.img {
+    width:80vw;
+    height: 30vh;
+}
+footer {
+    flex-direction:column ;
+}
+footer li{
+    list-style: none;
+}
+nav li {
+    font-size: .8rem;
+}
+input {
+    height: 16px;
+    padding: 2px;
+    font-size: .6rem;
+}
+.det{
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+}
+.dum{
+    font-size: .8rem;
+    width: 100%;
+    order: 2;
+}
+.img2,.img3,.img4 {
+    width: 320px;
+    height: 240px;
+    background-repeat: no-repeat;
+    border: 3px solid rgba(24, 17, 8, 0.753);;
+    
+}
+ .content{
+     width: 380px;
+    
+}
+div.prop {
+        padding: 15px;
+        box-sizing: border-box;
+
+}
+    footer>div:nth-of-type(2){
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1050px)
+{
+    nav{
+        width:100%;
+    }
 }
