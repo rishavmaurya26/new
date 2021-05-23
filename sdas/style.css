@@ -56,6 +56,18 @@ nav li {
     font-size: 1.2rem;
     margin:10px 10px;
 }
+input{
+    width:120px;
+    border-radius: 6px;
+    color: black;
+}
+li>button{
+    width:max-content;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:rgba(231, 151, 76, 0.589);
+    color:rgb(253, 245, 238)
+}
 div.cont {
     width:100%;
     padding:0;
